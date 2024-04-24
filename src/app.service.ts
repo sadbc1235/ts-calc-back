@@ -28,7 +28,7 @@ export class AppService {
       mkdirSync(uploadFilePath);
     }
     // 파일 이름
-    const fileName = Date.now() +'-'+ file.originalname;
+    const fileName = Date.now() +'-'+ file.originalname+'.jpeg';
     // 파일 업로드 경로
     const uploadPath = `${uploadFilePath +'/'+ fileName}`
     // console.log(uploadPath);
